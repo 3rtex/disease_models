@@ -1,9 +1,9 @@
 """
 Python script to regroup the data from 3 files. 
 
-The rows were for ~5 minutes but it was not precise. 
-We decided to regroup these file in one unique file 
-with hourly data.
+The rows were had for interval ~5 minutes but it was not precise. 
+We decided to regroup these 3 files in one unique file 
+with hourly data instead of 5 minutes interval data.
 """
 
 import pandas as pd
