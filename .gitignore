@@ -1,0 +1,6 @@
+hemp/airsensor_*
+hemp/leafsensor_*
+hemp/create_data_hourly.py
+venv/
+.ipynb_checkpoints
+.vscode
