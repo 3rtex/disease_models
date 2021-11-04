@@ -9,9 +9,9 @@ with hourly data instead of 5 minutes interval data.
 import pandas as pd
 
 # Read csv
-am = pd.read_csv("hemp/airsensor_moisture_0.csv")
-at = pd.read_csv("hemp/airsensor_temperature_0.csv")
-lm = pd.read_csv("hemp/leafsensor_moisture_0.csv")
+am = pd.read_csv("../hemp/airsensor_moisture_1.csv")
+at = pd.read_csv("../hemp/airsensor_temperature_1.csv")
+lm = pd.read_csv("../hemp/leafsensor_moisture_1.csv")
 
 # specify the date
 am.date = pd.to_datetime(am.date)
@@ -22,6 +22,7 @@ lm.date = pd.to_datetime(lm.date)
 df = am.groupby(pd.Grouper(key="date", freq='H')).mean()
 df['airsensor_temperature'] = at.groupby(pd.Grouper(key="date", freq='H')).mean().airsensor_temperature
 df['leafsensor_moisture'] = lm.groupby(pd.Grouper(key="date", freq='H')).mean().leafsensor_moisture
+df['airsensor_moisture'] = am.groupby(pd.Grouper(key="date", freq='H')).mean().airsensor_moisture
 
 # write
-df.to_csv('hemp/data.csv')
+df.to_csv('../hemp/data.csv')
