@@ -1,6 +1,7 @@
 hemp/airsensor_*
 hemp/leafsensor_*
-hemp/old_*
+raw/
 venv/
 .ipynb_checkpoints
 .vscode
+*/old_*
