@@ -1,11 +1,16 @@
 # Disease models
-Models for cucumber, hemp and cabbage
+
+Models for cucumber, hemp and cabbage.
 
 In each folder you can find the data I used, and the python notebooks files.
 
 - `data___.xls/csv` files are the inputs for the models.
 - `res___.xls/csv` files are the outputs for the models.
 - `obs___.xls/csv` files are the observations made by the  on the inputs for the models.
+
+## Documentation
+
+There are the states of the art in the `docs` folder.
 
 ## Python notebooks
 
